@@ -1,0 +1,46 @@
+* {
+    font-family: "Open Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.thumbnail-img{
+    background: linear-gradient(to top, rgb(225, 228, 228), rgb(144, 149, 154));
+
+}
+.name-text{
+    font-weight: 500;
+    color: black;
+}
+.price{
+    font-weight: 400;
+}
+.addtoCart{
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    font-weight: 400;
+    border-radius: 30px;
+}
+/* Button Circle Styling */
+.btn-circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    border-radius: 50%;
+    border: 2px solid #ccc; /* Border color */
+    background-color: #fff; /* Background color */
+    font-size: 14px; /* Font size */
+    line-height: 1; /* Ensures text is centered */
+    text-align: center; /* Ensures text is centered */
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+}
+
+.btn-circle.selected {
+    background-color: rgb(9, 4, 4) !important; /* Test color */
+    color: white !important; /* Test text color */
+    border-color: rgb(207, 187, 187) !important; /* Test border color */
+}

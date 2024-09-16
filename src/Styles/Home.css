@@ -1,0 +1,59 @@
+
+.image-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+  }
+  
+  .homeImg {
+	margin: 10px;
+	flex: 1 1 100%; /* Default to full width on small devices */
+  }
+  
+  .img-wrapper {
+	position: relative;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	height: 200px; /* Adjusted for small devices */
+  }
+  
+  .img-fluid {
+	width: 100%;
+	height: 100%; /* Ensures the image covers the wrapper */
+	object-fit: cover; /* Maintains the aspect ratio and covers the entire wrapper */
+	display: block; /* Removes inline-block space */
+  }
+  
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) {
+	.homeImg {
+	  flex: 1 1 100%; /* Adjust as needed */
+	}
+	
+	.img-wrapper {
+	  height: 200px; /* Adjusted for small devices */
+	}
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+	.homeImg {
+	  flex: 1 1 45%; /* Two images per row */
+	}
+	
+	.img-wrapper {
+	  height: 500px; /* Adjusted for medium devices */
+	}
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+	.homeImg {
+	  flex: 1 1 30%; /* Three images per row */
+	}
+	
+	.img-wrapper {
+	  height: 600px; /* Adjusted for large devices */
+	}
+  }

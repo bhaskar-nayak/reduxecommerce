@@ -1,0 +1,119 @@
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .homeImg2 {
+    position: relative;
+    margin: 10px;
+    flex: 1 1 100%;
+  }
+  
+  .img-wrapper {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    height: 200px; /* Adjusted height for mobile view */
+  }
+  
+  .img-fluid {
+    width: 100%;
+    height: 100%; /* Ensures the image covers the wrapper */
+    object-fit: cover; /* Maintains the aspect ratio and covers the entire wrapper */
+    display: block; /* Removes inline-block space */
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    width: 100%; /* Ensures overlay text takes the full width */
+    /* background: rgba(0, 0, 0, 0.1); Adds a semi-transparent background to make text readable */
+  }
+  
+  .btndesign {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    padding: 8px 16px; /* Smaller padding */
+    border-radius: 10px;
+    font-size: 0.875rem; /* Smaller font size */
+  }
+  
+  .text {
+    font-size: 18px; /* Smaller font size */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    color: gainsboro;
+  }
+  
+  .texts {
+    font-size: 22px; /* Smaller font size */
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+  }
+  
+  @media (min-width: 576px) {
+    .img-wrapper {
+      height: 400px; /* Adjusted height for small devices */
+    }
+  
+    .btndesign {
+      padding: 10px 18px; /* Adjust padding for small devices */
+      font-size: 1rem; /* Adjust font size for small devices */
+    }
+  
+    .text {
+      font-size: 20px; /* Adjust font size for small devices */
+    }
+  
+    .texts {
+      font-size: 24px; /* Adjust font size for small devices */
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .img-wrapper {
+      height: 500px; /* Adjusted height for medium devices */
+    }
+  
+    .btndesign {
+      padding: 12px 20px; /* Adjust padding for medium devices */
+      font-size: 1rem; /* Adjust font size for medium devices */
+    }
+  
+    .text {
+      font-size: 22px; /* Adjust font size for medium devices */
+    }
+  
+    .texts {
+      font-size: 26px; /* Adjust font size for medium devices */
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .img-wrapper {
+      height: 600px; /* Adjusted height for large devices */
+    }
+  
+    .btndesign {
+      padding: 12px 20px; /* Adjust padding for large devices */
+      font-size: 1rem; /* Adjust font size for large devices */
+    }
+  
+    .text {
+      font-size: 25px; /* Adjust font size for large devices */
+    }
+  
+    .texts {
+      font-size: 28px; /* Adjust font size for large devices */
+    }
+  }
